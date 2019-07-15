@@ -1,0 +1,9 @@
+source 'https://github.com/cocoapods/specs.git'
+platform :ios, '10.0'
+inhibit_all_warnings!
+use_modular_headers!
+
+target 'FlutterHybridTemplate' do
+   flutter_application_path = '../flutter_module/'
+   eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+end

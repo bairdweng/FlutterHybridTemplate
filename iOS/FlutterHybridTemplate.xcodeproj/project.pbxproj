@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FE615033A7333A65C763566 /* libPods-FlutterHybridTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5284254AB66A998EEEC5206 /* libPods-FlutterHybridTemplate.a */; };
 		9961736022DCCA9900F175C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961735F22DCCA9900F175C5 /* AppDelegate.swift */; };
 		9961736222DCCA9900F175C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961736122DCCA9900F175C5 /* ViewController.swift */; };
 		9961736522DCCA9900F175C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961736322DCCA9900F175C5 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		953BA68D91C74F35F9000DE4 /* Pods-FlutterHybridTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterHybridTemplate.release.xcconfig"; path = "Target Support Files/Pods-FlutterHybridTemplate/Pods-FlutterHybridTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9961735C22DCCA9900F175C5 /* FlutterHybridTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterHybridTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961735F22DCCA9900F175C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9961736122DCCA9900F175C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9961736622DCCA9B00F175C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9961736922DCCA9B00F175C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9961736B22DCCA9B00F175C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC44CCBE1DCC7546B58A85B /* Pods-FlutterHybridTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterHybridTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FlutterHybridTemplate/Pods-FlutterHybridTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		E5284254AB66A998EEEC5206 /* libPods-FlutterHybridTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlutterHybridTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE615033A7333A65C763566 /* libPods-FlutterHybridTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B06E64CB23F29A3F54DDB4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DC44CCBE1DCC7546B58A85B /* Pods-FlutterHybridTemplate.debug.xcconfig */,
+				953BA68D91C74F35F9000DE4 /* Pods-FlutterHybridTemplate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		725ADF80C52AF48BFF288C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5284254AB66A998EEEC5206 /* libPods-FlutterHybridTemplate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9961735322DCCA9900F175C5 = {
 			isa = PBXGroup;
 			children = (
 				9961735E22DCCA9900F175C5 /* FlutterHybridTemplate */,
 				9961735D22DCCA9900F175C5 /* Products */,
+				2B06E64CB23F29A3F54DDB4B /* Pods */,
+				725ADF80C52AF48BFF288C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9961736E22DCCA9B00F175C5 /* Build configuration list for PBXNativeTarget "FlutterHybridTemplate" */;
 			buildPhases = (
+				1963CF8626F6FF85B9DE3FBC /* [CP] Check Pods Manifest.lock */,
 				9961735822DCCA9900F175C5 /* Sources */,
 				9961735922DCCA9900F175C5 /* Frameworks */,
 				9961735A22DCCA9900F175C5 /* Resources */,
+				5251484256DC0AC2D1EF8B9C /* [CP] Embed Pods Frameworks */,
+				9984145F22DCD2310008518C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1963CF8626F6FF85B9DE3FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlutterHybridTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5251484256DC0AC2D1EF8B9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterHybridTemplate/Pods-FlutterHybridTemplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterHybridTemplate/Pods-FlutterHybridTemplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlutterHybridTemplate/Pods-FlutterHybridTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9984145F22DCD2310008518C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9961735822DCCA9900F175C5 /* Sources */ = {
@@ -280,10 +366,12 @@
 		};
 		9961736F22DCCA9B00F175C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC44CCBE1DCC7546B58A85B /* Pods-FlutterHybridTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6747MGQ837;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FlutterHybridTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +386,12 @@
 		};
 		9961737022DCCA9B00F175C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953BA68D91C74F35F9000DE4 /* Pods-FlutterHybridTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6747MGQ837;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FlutterHybridTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
